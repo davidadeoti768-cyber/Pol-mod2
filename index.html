@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Political Science Education – Module 2</title>
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg,#0b3d91,#1e90ff);
+      color:#222;
+    }
+    header{
+      padding:25px 15px;
+      text-align:center;
+      color:#fff;
+    }
+    section{
+      background:#fff;
+      margin:15px;
+      padding:20px;
+      border-radius:14px;
+      box-shadow:0 10px 25px rgba(0,0,0,.12);
+    }
+    h2{color:#0b3d91}
+    p{line-height:1.6}
+    a.button{
+      display:inline-block;
+      padding:12px 18px;
+      margin-top:10px;
+      background:#0b3d91;
+      color:#fff;
+      text-decoration:none;
+      border-radius:10px;
+      font-weight:600;
+    }
+    a.button:hover{background:#062c6f}/* Question form */
+form input, form textarea{
+  width:100%;
+  padding:12px;
+  margin:8px 0;
+  border-radius:10px;
+  border:1px solid #ccc;
+  font-size:14px;
+}
+form button{
+  background:#1e90ff;
+  color:#fff;
+  border:none;
+  padding:12px 22px;
+  border-radius:12px;
+  font-size:15px;
+  font-weight:600;
+  cursor:pointer;
+}
+form button:hover{background:#0b3d91}
+
+footer{
+  text-align:center;
+  padding:15px;
+  color:#fff;
+  font-size:14px;
+}
+
+  </style>
+</head>
+<body><header>
+  <h1>Political Science Education</h1>
+  <p>Module 2 – Department Academic Hub</p>
+</header><section>
+  <h2>📘 Course Guide</h2>
+  <p>Official departmental guide and academic information.</p>
+  <a class="button" href="https://docs.google.com/document/d/1vnROyQrzz_TaSpY59bBiR5gUxVwOXIwR0mp1COU1dqE/edit?usp=drivesdk" target="_blank">Open Course Guide</a>
+</section><section>
+  <h2>📚 Recommended Textbooks</h2>
+  <p>Approved textbooks and study materials for Module 2.</p>
+  <a class="button" href="https://docs.google.com/document/d/1g1_8xPh_QC0ZUyfMGM6Dc7ydqi5noIJ8P4ASr8yXx5o/edit?usp=drivesdk" target="_blank">View Textbooks</a>
+</section><section>
+  <h2>🧾 Class List</h2>
+  <p>Registered students and class records.</p>
+  <a class="button" href="https://docs.google.com/document/d/1P85BIcERWHIZAnWhgFsdz8Xu0jd6pq57lvYcO2Tkk3U/edit?usp=drivesdk" target="_blank">Open Class List</a>
+</section><section>
+  <h2>📝 Notes & Photo Archive</h2>
+  <p>All lecture notes, attendance sheets, and class photos are stored securely here.</p>
+  <a class="button" href="https://drive.google.com/drive/folders/1zvr35-QOOXANVJY29Uq9hKwamrcoo-jI" target="_blank">Open Google Drive Folder</a>
+</section><section>
+  <h2>❓ Ask a Question</h2>
+  <p>Ask academic or class-related questions below. Responses will be handled by the course coordinator.</p>
+  <form onsubmit="sendQuestion(event)">
+    <input type="text" id="name" placeholder="Your name" required />
+    <textarea id="question" rows="4" placeholder="Type your question here..." required></textarea>
+    <button type="submit">Send Question</button>
+  </form>
+</section><footer>
+  © 2026 Political Science Education Department
+</footer><script>
+  function sendQuestion(e){
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    alert('Thank you '+name+'! Your question has been submitted.');
+    document.getElementById('name').value='';
+    document.getElementById('question').value='';
+  }
+</script></body>
+</html>
